@@ -1,0 +1,61 @@
+.timer {
+  text-align: center;
+  background-color: #282c34;
+  padding: 0 0.5rem 0 0.5em;
+  min-height: 4rem;
+  max-width: 22rem;
+  align-items: center;
+  justify-content: center;
+  border-radius:10px;
+  color: rgb(156, 198, 242);
+}
+
+.time {
+  font-size: 2.5rem;
+}
+
+.div-row {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.div-button {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: .8rem;
+}
+
+
+.div-button:focus {
+  outline-width: 0;
+}
+
+
+.div.button:hover {
+  background-color: #2640d480;
+  border: 1px solid #1b1f2b;
+}
+
+.svg-icon {
+  padding-top: .5rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.svg-icon-stop{
+  @extend .svg-icon;
+}
+.svg-icon-pause{
+  @extend .svg-icon;
+}
+.svg-icon-play{
+  @extend .svg-icon-pause;
+}
+.svg-icon-stop:hover {
+  filter: invert(74%) sepia(72%) saturate(2981%) hue-rotate(313deg) brightness(91%) contrast(123%);
+}
+
+.svg-icon-pause:hover{
+  filter: invert(70%) sepia(5%) saturate(4349%) hue-rotate(186deg) brightness(113%) contrast(90%);
+}
